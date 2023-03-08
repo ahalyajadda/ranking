@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript ranking</title>
+  </head>
+  <body>
+    <div class="search-rank">
+      <h1>Javascript Coding</h1>
+      <div class="input">
+        <input type="text" id="skill" placeholder="enter skill" value="" />
+        <button onClick="handleClick()">Find rank</button>
+      </div>
+
+      <div class="content">
+        <span id="rank"></span>
+      </div>
+    </div>
+    <div class="table1">
+      <table>
+        <thead>
+          <tr>
+            <th>Skills/Capabilities</th>
+            <th>2019 score</th>
+            <th>2024 score</th>
+            <th>Present Rank</th>
+            <th>Future Rank</th>
+          </tr>
+        </thead>
+        <tbody id="fetched-data"></tbody>
+      </table>
+    </div>
+    <div class="table2">
+      <table>
+        <thead>
+          <tr>
+            <th>Top3-present</th>
+            <th>Top3-future</th>
+            <th>Bottom3-present</th>
+            <th>Bottom3-future</th>
+            <th>Top3-Accelerating</th>
+            <th>Bottom3-Decelerating</th>
+          </tr>
+        </thead>
+        <tbody id="three-data"></tbody>
+      </table>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
